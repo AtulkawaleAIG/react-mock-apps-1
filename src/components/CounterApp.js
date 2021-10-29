@@ -3,8 +3,8 @@ import BlueButton from "./BlueButton";
 import Button from "./Button";
 import {useState, useEffect} from "react"; // hook (lifecycle)
 
-const CounterApp = () => {
-    const [counter, setCounter] = useState(0);
+const CounterApp = ({counterValue}) => {
+    const [counter, setCounter] = useState(counterValue);
 
     // 1. useEffect is called once the page is loaded.
     // 2. it needs an input value which is a variable on whose change in value useEffect is to be called.
